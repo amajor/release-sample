@@ -65,6 +65,14 @@ The hot fix branch can then be deleted.
 
 ![Delete hot fix branch][12]
 
+## Repository Setup
+
+When creating your repository, add a new `develop` branch.
+
+Then, in GitHub, set `develop` as the default branch on the **Branch Settings** page.
+
+![Default Branch][DefaultBranch]
+
 [01]: /images/01_MasterAndDevelopBranches.png "Master and Develop branch"
 [02]: /images/02_StartFeatureBranch.png "Start a feature branch"
 [03]: /images/03_MergeFeatureBranch.png "Merge the feature branch"
@@ -77,3 +85,4 @@ The hot fix branch can then be deleted.
 [10]: /images/10_MergeHotFixMaster.png "Merge the hot fix to master"
 [11]: /images/11_MergeHotFixDevelop.png "Merge the hot fix to develop"
 [12]: /images/12_DeleteHotFixBranch.png "Delete hot fix branch"
+[DefaultBranch]: /images/DefaultBranch.png "Default Branch"
