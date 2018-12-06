@@ -77,9 +77,54 @@ This sets `develop` as the default base branch when opening pull requests for ne
 
 ![Base Branch][BaseBranch]
 
-Once the pull request has been merged, you can see the changes are now available in the develop branch.
+Once feature pull requests have been merged, you can see the changes are now available in the develop branch.
 
 ![Feature Branch Network][BranchNetwork_Feature]
+
+## Creating Releases
+
+Using your local command line tool, create a new branch from the latest version of the `develop branch`.
+
+```
+// Move to the develop branch
+$ git checkout develop
+
+// Be sure to have the latest changes
+$ git pull
+
+// Make a new release branch
+$ git checkout -b Release-v1.0.0
+```
+
+If you have any minor bug fixes, it's okay to add them to the release branch.
+
+Go ahead and push this up to GitHub once it's ready.
+
+```
+$ git push
+```
+
+Then create a pull request. **IMPORTANT:** set your base branch as `master`.
+
+Once it's approved and merged, go back to your command line and also merge the branch into `develop`.
+
+```
+// Make sure you have the latest change for the release branch
+$ git checkout Release-v1.0.0
+$ git pull
+
+// Now move to the develop branch
+$ git checkout develop
+
+// Merge the release changes to develop
+$ git merge Release-v1.0.0
+
+// Push the changes up to GitHub
+$ git push
+```
+
+For some reason, even though this is a protected branch, it still seems to push.
+
 
 [01]: /images/01_MasterAndDevelopBranches.png "Master and Develop branch"
 [02]: /images/02_StartFeatureBranch.png "Start a feature branch"
