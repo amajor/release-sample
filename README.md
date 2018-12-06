@@ -77,6 +77,10 @@ This sets `develop` as the default base branch when opening pull requests for ne
 
 ![Base Branch][BaseBranch]
 
+Once the pull request has been merged, you can see the changes are now available in the develop branch.
+
+![Feature Branch Network][BranchNetwork_Feature]
+
 [01]: /images/01_MasterAndDevelopBranches.png "Master and Develop branch"
 [02]: /images/02_StartFeatureBranch.png "Start a feature branch"
 [03]: /images/03_MergeFeatureBranch.png "Merge the feature branch"
@@ -91,3 +95,4 @@ This sets `develop` as the default base branch when opening pull requests for ne
 [12]: /images/12_DeleteHotFixBranch.png "Delete hot fix branch"
 [DefaultBranch]: /images/DefaultBranch.png "Default Branch"
 [BaseBranch]: /images/BaseBranch.png "Develop as Base Branch"
+[BranchNetwork_Feature]: /images/BranchNetwork_Feature.png "Feature Branch"
