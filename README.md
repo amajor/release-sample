@@ -125,6 +125,20 @@ $ git push
 
 For some reason, even though this is a protected branch, it still seems to push.
 
+## Adding Tags
+
+List out all current tags this way:
+
+```
+$ git tag
+```
+
+You can add annotated tags in your command line in the following way:
+
+```
+$ git tag -a v1.0.1 -m "Hot Fix for README update"
+```
+
 
 [01]: /images/01_MasterAndDevelopBranches.png "Master and Develop branch"
 [02]: /images/02_StartFeatureBranch.png "Start a feature branch"
